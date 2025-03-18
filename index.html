@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unreleased's Applabs</title>
+    
+    <!-- Add Favicon -->
+    <link rel="icon" type="image/png" href="App-Lab-Guide.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Body and Page Setup */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        /* Taskbar Style */
+        .taskbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+            z-index: 1000;
+            display: flex;
+            justify-content: center; /* Center content in the taskbar */
+        }
+
+        .taskbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            background-color: #FF5733;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .taskbar a:hover {
+            background-color: #d84d2f; /* Darker orange on hover */
+        }
+
+        /* Content of the page */
+        .container {
+            margin-top: 60px; /* Space for the taskbar */
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: #FF5733;
+        }
+
+        /* Image Styling */
+        .image-container {
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Button Style */
+        .button {
+            background-color: #FF5733;
+            padding: 15px 25px;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #d84d2f;
+        }
+    </style>
+
+    <!-- Redirect to Login Page on Load -->
+    <script>
+        window.onload = function() {
+            window.location.href = "login.html";  // Redirect to the login page
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Taskbar with Discord link centered -->
+    <div class="taskbar">
+        <a href="https://discord.gg/H6pUsnyyht" target="_blank">Join Our Discord</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to Unreleased's Applabs</h1>
+
+        <!-- Image in the middle -->
+        <div class="image-container">
+            <img src="App-Lab-Guide.png" alt="App Lab Guide Image">
+        </div>
+
+        <p>Explore and purchase exclusive Meta Quest Applabs content.</p>
+
+        <a href="shop.html" class="button">Visit Our Shop</a>
+    </div>
+
+</body>
+</html>
